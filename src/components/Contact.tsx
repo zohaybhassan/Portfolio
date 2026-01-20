@@ -61,7 +61,15 @@ export default function Contact() {
 
           <div className="bg-slate-800 rounded-2xl p-8 md:p-12 border border-slate-700">
             <h3 className="text-2xl font-bold mb-6">Send me a message</h3>
-            <form className="space-y-6">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" className="space-y-6">
+              {/* Hidden fields for Netlify */}
+              <input type="hidden" name="form-name" value="contact" />
+              <p className="hidden">
+                <label>
+                  Don't fill this out if you're human: <input name="bot-field" />
+                </label>
+              </p>
+
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2 text-slate-300">
@@ -70,6 +78,8 @@ export default function Contact() {
                   <input
                     type="text"
                     id="name"
+                    name="name"
+                    required
                     className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-white placeholder-slate-400 transition-colors"
                     placeholder="Your Name"
                   />
@@ -81,6 +91,8 @@ export default function Contact() {
                   <input
                     type="email"
                     id="email"
+                    name="email"
+                    required
                     className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-white placeholder-slate-400 transition-colors"
                     placeholder="your.email@example.com"
                   />
@@ -93,6 +105,8 @@ export default function Contact() {
                 <input
                   type="text"
                   id="subject"
+                  name="subject"
+                  required
                   className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-white placeholder-slate-400 transition-colors"
                   placeholder="What's this about?"
                 />
@@ -103,7 +117,9 @@ export default function Contact() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={6}
+                  required
                   className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-white placeholder-slate-400 transition-colors resize-none"
                   placeholder="Tell me about your project..."
                 ></textarea>
