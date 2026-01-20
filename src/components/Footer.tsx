@@ -1,5 +1,3 @@
-import { Heart } from 'lucide-react';
-
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -17,10 +15,6 @@ export default function Footer() {
             Zohaib Hassan
             <span className="text-emerald-500">{'/>'}</span>
           </button>
-
-          <p className="text-slate-400 flex items-center gap-2">
-            Made with <Heart className="w-4 h-4 text-red-500 fill-red-500" /> by Zohaib Hassan
-          </p>
 
           <p className="text-slate-400 text-sm">
             © {new Date().getFullYear()} All rights reserved.
