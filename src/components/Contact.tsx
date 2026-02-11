@@ -5,8 +5,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'i220800@nu.edu.pk',
-      href: 'mailto:i220800@nu.edu.pk',
+      value: 'zohaib.hassan1265@gmail.com',
+      href: 'mailto:zohaib.hassan1265@gmail.com',
       color: 'hover:bg-red-500',
     },
     {

@@ -1,4 +1,8 @@
 import { ExternalLink, Github } from 'lucide-react';
+import primeFitnessImg from '/assets/primefitness.png';
+import onlineLibImg from '/assets/onlinelib.jpg';
+import pacmanImg from '/assets/pacman.png';
+import torcsImg from '/assets/Torcs-title.png';
 
 export default function Projects() {
   const projects = [
@@ -7,7 +11,7 @@ export default function Projects() {
       description:
         'Web application with multi-tier client-server architecture using JavaFX and JDBC. Integrated with mySQL database following GRASP design patterns.',
       tags: ['JavaFX', 'JDBC', 'Springtool', 'MySQL', 'JavaScript'],
-      image: 'https://images.pexels.com/photos/4162449/pexels-photo-4162449.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: primeFitnessImg,
       github: 'https://github.com/yourusername',
       live: '#',
     },
@@ -16,7 +20,7 @@ export default function Projects() {
       description:
         'Full-stack web application built with Vue.js and Firebase database. Implemented FSM for state management to handle complex book lending workflows.',
       tags: ['Vue.js', 'Vuex', 'HTML', 'CSS', 'JavaScript', 'Firebase'],
-      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: onlineLibImg,
       github: 'https://github.com/yourusername',
       live: '#',
     },
@@ -34,7 +38,7 @@ export default function Projects() {
       description:
         'Developed Pacman game from scratch using Assembly language and Irvine library. Used 32-bit MASM 615 for x8086 processor programming.',
       tags: ['Assembly', 'Irvine', 'MASM', 'x8086'],
-      image: 'https://images.pexels.com/photos/163036/mario-yoschi-figures-funny-163036.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: pacmanImg,
       github: 'https://github.com/yourusername',
       live: '#',
     },
@@ -43,7 +47,7 @@ export default function Projects() {
       description:
         'Tower defense game developed using C++ and SFML. Applied OOP concepts including inheritance and polymorphism with proper UML design.',
       tags: ['C++', 'SFML', 'OOP', 'Game Dev'],
-      image: 'https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: null,
       github: 'https://github.com/yourusername',
       live: '#',
     },
@@ -52,7 +56,7 @@ export default function Projects() {
       description:
         'AI-powered racing game using Python with MLP Regressor. Trained datasets on the model for autonomous driving simulation.',
       tags: ['Python', 'MLP', 'Machine Learning', 'AI'],
-      image: 'https://images.pexels.com/photos/193999/pexels-photo-193999.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: torcsImg,
       github: 'https://github.com/yourusername',
       live: '#',
     },
@@ -78,27 +82,37 @@ export default function Projects() {
               className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100"
             >
               <div className="relative overflow-hidden h-48">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 gap-4">
-                  <a
-                    href={project.github}
-                    className="p-2 bg-white rounded-lg hover:bg-emerald-500 transition-colors"
-                    aria-label="View GitHub repository"
-                  >
-                    <Github className="w-5 h-5 text-slate-900 hover:text-white" />
-                  </a>
-                  <a
-                    href={project.live}
-                    className="p-2 bg-white rounded-lg hover:bg-emerald-500 transition-colors"
-                    aria-label="View live demo"
-                  >
-                    <ExternalLink className="w-5 h-5 text-slate-900 hover:text-white" />
-                  </a>
-                </div>
+                {project.image ? (
+                  <>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 gap-4">
+                      <a
+                        href={project.github}
+                        className="p-2 bg-white rounded-lg hover:bg-emerald-500 transition-colors"
+                        aria-label="View GitHub repository"
+                      >
+                        <Github className="w-5 h-5 text-slate-900 hover:text-white" />
+                      </a>
+                      <a
+                        href={project.live}
+                        className="p-2 bg-white rounded-lg hover:bg-emerald-500 transition-colors"
+                        aria-label="View live demo"
+                      >
+                        <ExternalLink className="w-5 h-5 text-slate-900 hover:text-white" />
+                      </a>
+                    </div>
+                  </>
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500 flex items-center justify-center p-6">
+                    <h3 className="text-3xl md:text-4xl font-extrabold text-white text-center leading-tight drop-shadow-2xl">
+                      {project.title}
+                    </h3>
+                  </div>
+                )}
               </div>
 
               <div className="p-6">
