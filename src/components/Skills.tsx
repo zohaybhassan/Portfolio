@@ -6,25 +6,34 @@ export default function Skills() {
         { name: 'HTML/CSS', level: 90 },
         { name: 'JavaScript', level: 85 },
         { name: 'Vue.js', level: 85 },
-        { name: 'React', level: 80 },
+        { name: 'React', level: 75 },
       ],
     },
     {
       category: 'Languages',
       skills: [
         { name: 'C++', level: 90 },
-        { name: 'Python', level: 80 },
         { name: 'Java', level: 85 },
+        { name: 'Python', level: 80 },
         { name: 'Assembly', level: 75 },
+      ],
+    },
+    {
+      category: 'Salesforce & Database',
+      skills: [
+        { name: 'Apex (Basic)', level: 65 },
+        { name: 'SOQL', level: 70 },
+        { name: 'MySQL', level: 80 },
+        { name: 'Firebase', level: 80 },
       ],
     },
     {
       category: 'Tools & Others',
       skills: [
         { name: 'Git/GitHub', level: 85 },
-        { name: 'Firebase', level: 80 },
-        { name: 'MySQL', level: 75 },
+        { name: 'JDBC/JavaFX', level: 85 },
         { name: 'WordPress', level: 70 },
+        { name: 'Vuex/State Mgmt', level: 85 },
       ],
     },
   ];
@@ -39,7 +48,7 @@ export default function Skills() {
           <div className="w-20 h-1 bg-emerald-500 mx-auto"></div>
         </div>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}

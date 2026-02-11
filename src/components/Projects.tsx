@@ -7,10 +7,19 @@ import torcsImg from '/assets/Torcs-title.png';
 export default function Projects() {
   const projects = [
     {
+      title: 'Salesforce CRM Prototype',
+      description:
+        'Modelled an \'Order-to-Cash\' workflow in a Developer Org, writing Apex Triggers to automate contact synchronization. Implemented Bulkified SOQL queries to process records efficiently, strictly adhering to Salesforce Governor Limits.',
+      tags: ['Apex', 'SOQL', 'Salesforce Platform'],
+      image: null,
+      github: 'https://github.com/yourusername',
+      live: '#',
+    },
+    {
       title: 'Prime Fitness Gym Management System',
       description:
-        'Web application with multi-tier client-server architecture using JavaFX and JDBC. Integrated with mySQL database following GRASP design patterns.',
-      tags: ['JavaFX', 'JDBC', 'Springtool', 'MySQL', 'JavaScript'],
+        'Engineered a Multi-Tier Client-Server architecture, separating UI logic from database operations (MVC Pattern). Implemented JDBC connectivity to execute complex SQL queries for member tracking, similar to Salesforce integration patterns. Applied GRASP design patterns (High Cohesion, Low Coupling) to ensure scalable and maintainable code.',
+      tags: ['Java', 'JavaFX', 'JDBC', 'Springtool', 'MySQL'],
       image: primeFitnessImg,
       github: 'https://github.com/yourusername',
       live: '#',
@@ -18,9 +27,36 @@ export default function Projects() {
     {
       title: 'Online Library Management System',
       description:
-        'Full-stack web application built with Vue.js and Firebase database. Implemented FSM for state management to handle complex book lending workflows.',
+        'Designed a relational data schema in Firebase to handle inventory and user borrowing history (CRUD Operations). Implemented State Management (Vuex) to handle complex user sessions, ensuring data consistency across the application. Enforced Role-Based Access Control (RBAC) to securely separate admin privileges from student access.',
       tags: ['Vue.js', 'Vuex', 'HTML', 'CSS', 'JavaScript', 'Firebase'],
       image: onlineLibImg,
+      github: 'https://github.com/yourusername',
+      live: '#',
+    },
+    {
+      title: 'TORCS Racing Simulator',
+      description:
+        'Developed an autonomous racing agent using MLP Regressors, training datasets to optimize driving trajectories. Built a data pipeline to clean and normalize sensor inputs before feeding them into the neural network.',
+      tags: ['Python', 'MLP Regressor', 'Machine Learning'],
+      image: torcsImg,
+      github: 'https://github.com/yourusername',
+      live: '#',
+    },
+    {
+      title: 'Plants vs. Zombies',
+      description:
+        'Architected a game engine using C++ Polymorphism, managing diverse entity behaviours via inheritance.',
+      tags: ['C++', 'SFML', 'OOP', 'Game Dev'],
+      image: null,
+      github: 'https://github.com/yourusername',
+      live: '#',
+    },
+    {
+      title: 'Pacman',
+      description:
+        'Optimized low-level memory usage by developing a clone in Assembly (x86), managing 32-bit registers directly.',
+      tags: ['Assembly', 'x86', 'MASM'],
+      image: pacmanImg,
       github: 'https://github.com/yourusername',
       live: '#',
     },
@@ -30,33 +66,6 @@ export default function Projects() {
         'Classic Tetris game developed in C++ using SFML library on Ubuntu. Applied programming fundamentals with proper array and pointer manipulation.',
       tags: ['C++', 'SFML', 'Ubuntu', 'Game Dev'],
       image: 'https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com/yourusername',
-      live: '#',
-    },
-    {
-      title: 'Pacman Game Development',
-      description:
-        'Developed Pacman game from scratch using Assembly language and Irvine library. Used 32-bit MASM 615 for x8086 processor programming.',
-      tags: ['Assembly', 'Irvine', 'MASM', 'x8086'],
-      image: pacmanImg,
-      github: 'https://github.com/yourusername',
-      live: '#',
-    },
-    {
-      title: 'Plants Vs Zombies Game',
-      description:
-        'Tower defense game developed using C++ and SFML. Applied OOP concepts including inheritance and polymorphism with proper UML design.',
-      tags: ['C++', 'SFML', 'OOP', 'Game Dev'],
-      image: null,
-      github: 'https://github.com/yourusername',
-      live: '#',
-    },
-    {
-      title: 'TORCS Racing Simulator',
-      description:
-        'AI-powered racing game using Python with MLP Regressor. Trained datasets on the model for autonomous driving simulation.',
-      tags: ['Python', 'MLP', 'Machine Learning', 'AI'],
-      image: torcsImg,
       github: 'https://github.com/yourusername',
       live: '#',
     },

@@ -5,8 +5,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'zohaib.hassan1265@gmail.com',
-      href: 'mailto:zohaib.hassan1265@gmail.com',
+      value: 'zohaybhassan676@gmail.com',
+      href: 'mailto:zohaybhassan676@gmail.com',
       color: 'hover:bg-red-500',
     },
     {

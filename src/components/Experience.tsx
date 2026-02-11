@@ -3,51 +3,19 @@ import { Briefcase, GraduationCap } from 'lucide-react';
 export default function Experience() {
   const experiences = [
     {
-      title: 'Software Internship (Front-End Developer)',
-      company: 'Teresol Pvt. Ltd. Islamabad',
+      title: 'Software Internship',
+      company: 'Teresol Pvt. Ltd. Islamabad (On-site)',
       period: 'June 2024 – Aug 2024',
       description:
-        'Developed an online web application as a front-end developer. Worked extensively with Vue.JS and FSM (Finite State Machine) to build the product.',
+        'Architected a Vue.js Finite State Machine (FSM) to manage complex user sessions and ensure data consistency. Built scalable, reusable UI components using Component-Based Architecture, mirroring Salesforce LWC patterns. Implemented Vuex state management, reducing redundant API calls and boosting performance by 30%.',
       type: 'work',
     },
     {
-      title: 'Software Internship (Front-End Developer)',
-      company: 'Aesthetic Dental Co (Remote)',
-      period: 'Dec 2024 – Feb 2025',
+      title: 'Technical Content Writer',
+      company: 'VeryAliGaming (Remote)',
+      period: 'Feb 2024 – May 2024',
       description:
-        'Working as a digital content and front-end manager for their new website. Collaborated with the team on React development and managed database operations.',
-      type: 'work',
-    },
-    {
-      title: 'Content Writer (Freelance)',
-      company: 'Remote',
-      period: 'April 2023 – Present',
-      description:
-        'Writing on diverse subjects ranging from marketing to humanities. Producing quality content for various clients and platforms.',
-      type: 'work',
-    },
-    {
-      title: 'Admissions Team Intern',
-      company: 'FAST NUCES Islamabad',
-      period: 'June 2023 – Aug 2023',
-      description:
-        'Worked on the University Online Portal-FLEX for admissions process. Developed and implemented Excel and Word skills for database management.',
-      type: 'work',
-    },
-    {
-      title: 'Digital Operations Officer',
-      company: 'NASCON\'24 – FAST NUCES Islamabad',
-      period: 'Feb 2024 – March 2024',
-      description:
-        'Managed digital operations for the conference. Worked extensively on Microsoft Excel and Word for various database management queries.',
-      type: 'work',
-    },
-    {
-      title: 'Gaming Guide Writer',
-      company: 'FAST NUCES Islamabad',
-      period: 'Feb 2024 – March 2024',
-      description:
-        'Wrote gaming guides for veryaligaming, supervising work. Worked on WordPress for publishing gaming articles on the website.',
+        'Published gaming articles on the website. Managed content workflows via WordPress (CMS), ensuring SEO compliance and accuracy.',
       type: 'work',
     },
   ];

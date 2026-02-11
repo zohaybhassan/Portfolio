@@ -34,13 +34,13 @@ export default function About() {
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               I'm a Computer Science student at the National University of Computer and Emerging Sciences (FAST NUCES), Islamabad,
               passionate about software development and web technologies. With hands-on experience in front-end development through
-              internships at Teresol Pvt. Ltd. and Aesthetic Dental Co, I've worked on building modern web applications using
-              Vue.js, React, and various state management solutions.
+              my internship at Teresol Pvt. Ltd., I've worked on building modern web applications using
+              Vue.js, Vuex state management, and Component-Based Architecture patterns.
             </p>
             <p className="text-lg text-slate-700 leading-relaxed">
-              Beyond internships, I've contributed as a content writer, gaming guide writer, and digital operations officer for
-              various organizations. I enjoy working on diverse projects from game development to full-stack web applications,
-              constantly learning new technologies and best practices to build elegant, efficient solutions.
+              I have experience with diverse technologies including Salesforce platform (Apex, SOQL), full-stack web development,
+              and game engine development. I'm constantly learning and applying best practices in software engineering, from
+              Multi-Tier Architecture and GRASP design patterns to modern frontend frameworks and cloud platforms.
             </p>
           </div>
 

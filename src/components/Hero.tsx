@@ -7,8 +7,20 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMiI+PHBhdGggZD0iTTM2IDM0djItaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-40"></div>
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden text-white">
+      {/* Dark Galaxy Background */}
+      <div className="absolute inset-0 bg-black"></div>
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?q=80&w=2013&auto=format&fit=crop')" }}
+      ></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
+
+      {/* Animated Stars */}
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwMCIgaGVpZ2h0PSIyMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdyI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2ZmZjtzdG9wLW9wYWNpdHk6MSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I2ZmZjtzdG9wLW9wYWNpdHk6MCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iMiIgZmlsbD0idXJsKCNnbG93KSIgb3BhY2l0eT0iMC44Ii8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMjAwIiByPSIxLjUiIGZpbGw9InVybCgjZ2xvdykiIG9wYWNpdHk9IjAuNiIvPjxjaXJjbGUgY3g9IjUwMCIgY3k9IjMwMCIgcj0iMSIgZmlsbD0idXJsKCNnbG93KSIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iNzAwIiBjeT0iMTUwIiByPSIyIiBmaWxsPSJ1cmwoI2dsb3cpIiBvcGFjaXR5PSIwLjkiLz48Y2lyY2xlIGN4PSI5MDAiIGN5PSI0MDAiIHI9IjEuNSIgZmlsbD0idXJsKCNnbG93KSIgb3BhY2l0eT0iMC41Ii8+PGNpcmNsZSBjeD0iMTEwMCIgY3k9IjI1MCIgcj0iMSIgZmlsbD0idXJsKCNnbG93KSIgb3BhY2l0eT0iMC44Ii8+PGNpcmNsZSBjeD0iMTMwMCIgY3k9IjM1MCIgcj0iMiIgZmlsbD0idXJsKCNnbG93KSIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMTUwMCIgY3k9IjEwMCIgcj0iMS41IiBmaWxsPSJ1cmwoI2dsb3cpIiBvcGFjaXR5PSIwLjYiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSI1MDAiIHI9IjEiIGZpbGw9InVybCgjZ2xvdykiIG9wYWNpdHk9IjAuOSIvPjxjaXJjbGUgY3g9IjYwMCIgY3k9IjYwMCIgcj0iMiIgZmlsbD0idXJsKCNnbG93KSIgb3BhY2l0eT0iMC44Ii8+PC9zdmc+')] opacity-30 animate-pulse"></div>
+
+      {/* Subtle dark overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900/10 via-transparent to-blue-950/10"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center space-y-6 animate-fade-in">
