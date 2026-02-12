@@ -22,7 +22,7 @@ export default function Experience() {
 
   const education = [
     {
-      title: 'Bachelor of Science in Computer Sciences',
+      title: 'Bachelors of Science in Computer Sciences',
       company: 'National University of Computer and Emerging Sciences, Islamabad',
       period: 'Aug 2022 – Present',
       description:
