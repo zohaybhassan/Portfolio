@@ -25,13 +25,15 @@ export default function Hero() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center space-y-6 animate-fade-in relative">
 
-          {/* Dark radial scrim behind text — guarantees legibility over any background */}
-          <div
-            className="absolute inset-0 -z-10 pointer-events-none"
-            style={{
-              background: 'radial-gradient(ellipse 700px 500px at 50% 50%, rgba(2,6,23,0.80) 0%, rgba(2,6,23,0.50) 50%, transparent 80%)',
-            }}
-          ></div>
+          {/* Dark scrim behind text for guaranteed legibility */}
+          <div className="absolute inset-0 -z-10 flex items-center justify-center pointer-events-none">
+            <div
+              className="w-[1000px] h-[800px] rounded-full translate-y-10"
+              style={{
+                background: 'radial-gradient(ellipse at center, rgba(2,6,23,0.85) 0%, rgba(2,6,23,0.4) 45%, transparent 70%)',
+              }}
+            ></div>
+          </div>
 
           {/* Monospace tag line */}
           <div className="inline-block relative">
