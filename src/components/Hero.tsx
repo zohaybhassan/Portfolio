@@ -23,7 +23,16 @@ export default function Hero() {
       <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-violet-600/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center space-y-6 animate-fade-in">
+        <div className="text-center space-y-6 animate-fade-in relative">
+
+          {/* Dark radial scrim behind text — guarantees legibility over any background */}
+          <div
+            className="absolute inset-0 -z-10 pointer-events-none"
+            style={{
+              background: 'radial-gradient(ellipse 700px 500px at 50% 50%, rgba(2,6,23,0.80) 0%, rgba(2,6,23,0.50) 50%, transparent 80%)',
+            }}
+          ></div>
+
           {/* Monospace tag line */}
           <div className="inline-block relative">
             <span className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-8 w-6 h-px bg-indigo-400 opacity-70"></span>
@@ -31,7 +40,7 @@ export default function Hero() {
               className="text-lg md:text-xl font-mono tracking-[0.3em] uppercase mb-4"
               style={{
                 color: '#a5b4fc',
-                textShadow: '0 0 20px rgba(99,102,241,0.5)',
+                textShadow: '0 0 20px rgba(99,102,241,0.6)',
               }}
             >
               &lt; Hello, I'm /&gt;
@@ -39,29 +48,36 @@ export default function Hero() {
             <span className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-8 w-6 h-px bg-indigo-400 opacity-70"></span>
           </div>
 
-          {/* Name — indigo to violet gradient */}
+          {/* Name — solid white with strong indigo glow so it pops on any background */}
           <h1
-            className="text-5xl md:text-7xl font-black mb-4 tracking-tight animate-neon-shimmer"
+            className="text-5xl md:text-7xl font-black mb-4 tracking-tight"
             style={{
-              background: 'linear-gradient(90deg, #818cf8, #a78bfa, #c4b5fd, #a78bfa, #818cf8)',
-              backgroundSize: '300% 100%',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              filter: 'drop-shadow(0 0 20px rgba(129,140,248,0.4))',
+              color: '#ffffff',
+              textShadow: `
+                0 0 20px rgba(129,140,248,0.9),
+                0 0 50px rgba(129,140,248,0.5),
+                0 0 90px rgba(167,139,250,0.25),
+                0 2px 6px rgba(0,0,0,0.9)
+              `,
             }}
           >
             Zohaib Hassan
           </h1>
 
-          <p className="text-xl md:text-3xl text-slate-300 font-light">
+          <p
+            className="text-xl md:text-2xl text-slate-100 font-light"
+            style={{ textShadow: '0 1px 8px rgba(0,0,0,0.9)' }}
+          >
             Software Developer &amp; Full Stack Trainee
           </p>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto mt-6">
+          <p
+            className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mt-2"
+            style={{ textShadow: '0 1px 6px rgba(0,0,0,0.8)' }}
+          >
             Computer Science student passionate about crafting elegant web applications and innovative solutions
           </p>
 
-          {/* CTA Buttons — indigo themed */}
+          {/* CTA Buttons */}
           <div className="flex gap-4 justify-center mt-8">
             <button
               onClick={() => scrollToSection('contact')}
