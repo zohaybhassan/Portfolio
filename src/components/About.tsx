@@ -69,7 +69,7 @@ export default function About() {
                   and developing autonomous, multi-agent workflows.
                 </p>
                 <p className="text-lg text-slate-200 leading-relaxed">
-                  Proficient in a versatile stack — including <span className="font-semibold text-indigo-300">Python, Java, C++, and Salesforce</span> — I build everything from
+                  Proficient in a versatile stack, including <span className="font-semibold text-indigo-300">Python, Java, C++, and Salesforce.</span> I build everything from
                   custom Android health ecosystems to intelligent agentic automation tools. I am adept at applying
                   <span className="font-semibold text-violet-300"> clean design patterns</span> to build resilient, high-performance software that leverages
                   <span className="font-semibold text-sky-300"> AI to solve complex challenges</span>.
