@@ -62,15 +62,17 @@ export default function About() {
                 </div>
 
                 <p className="text-lg text-slate-200 leading-relaxed mb-6">
-                  I'm a <span className="font-semibold text-indigo-300">Computer Science student</span> at the National University of Computer and Emerging Sciences (FAST NUCES), Islamabad,
-                  passionate about <span className="font-semibold text-violet-300">software development</span> and <span className="font-semibold text-sky-300">web technologies</span>. With hands-on experience in front-end development through
-                  my internship at <span className="font-semibold text-indigo-300">Teresol Pvt. Ltd.</span>, I've worked on building modern web applications using
-                  Vue.js, Vuex state management, and Component-Based Architecture patterns.
+                  I am a <span className="font-semibold text-indigo-300">software developer and CS senior at FAST NUCES</span>, specializing at the intersection of
+                  <span className="font-semibold text-violet-300"> scalable system architecture</span> and <span className="font-semibold text-violet-300">applied artificial intelligence</span>.
+                  While I have a strong foundation in full-stack development, my core expertise lies in engineering
+                  <span className="font-semibold text-sky-300"> predictive machine learning pipelines</span>, integrating real-time data telemetry,
+                  and developing autonomous, multi-agent workflows.
                 </p>
                 <p className="text-lg text-slate-200 leading-relaxed">
-                  I have experience with diverse technologies including <span className="font-semibold text-indigo-300">Salesforce platform</span> (Apex, SOQL), full-stack web development,
-                  and game engine development. I'm constantly learning and applying best practices in software engineering, from
-                  Multi-Tier Architecture and GRASP design patterns to modern frontend frameworks and cloud platforms.
+                  Proficient in a versatile stack — including <span className="font-semibold text-indigo-300">Python, Java, C++, and Salesforce</span> — I build everything from
+                  custom Android health ecosystems to intelligent agentic automation tools. I am adept at applying
+                  <span className="font-semibold text-violet-300"> clean design patterns</span> to build resilient, high-performance software that leverages
+                  <span className="font-semibold text-sky-300"> AI to solve complex challenges</span>.
                 </p>
 
                 <div className="mt-8 flex items-center gap-4 text-sm text-slate-400">
