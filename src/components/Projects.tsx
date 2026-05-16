@@ -3,7 +3,7 @@ import primeFitnessImg from '/assets/primefitness.png';
 import onlineLibImg from '/assets/onlinelib.jpg';
 import pacmanImg from '/assets/pacman.png';
 import torcsImg from '/assets/Torcs-title.png';
-import stresslogo from '/assets/stresslogo.jpeg';
+import stresslogo from '/assets/stresslogo.jpg';
 
 export default function Projects() {
   const projects = [
