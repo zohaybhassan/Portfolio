@@ -33,7 +33,7 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white shadow-lg'
+          ? 'bg-slate-900/95 backdrop-blur-md shadow-lg shadow-slate-950/50 border-b border-slate-800/60'
           : 'bg-transparent'
       }`}
     >
@@ -41,13 +41,11 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           <button
             onClick={() => scrollToSection('hero')}
-            className={`text-2xl font-bold transition-colors ${
-              isScrolled ? 'text-slate-900' : 'text-white'
-            }`}
+            className="text-2xl font-bold text-white transition-colors"
           >
-            <span className="text-emerald-500">{'<'}</span>
+            <span className="text-indigo-400">{'<'}</span>
             Zohaib Hassan
-            <span className="text-emerald-500">{'/>'}</span>
+            <span className="text-indigo-400">{'/>'}</span>
           </button>
 
           <div className="hidden md:flex items-center gap-8">
@@ -55,9 +53,7 @@ export default function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`font-medium transition-colors hover:text-emerald-500 ${
-                  isScrolled ? 'text-slate-700' : 'text-white'
-                }`}
+                className="text-slate-300 font-medium transition-colors hover:text-indigo-400"
               >
                 {item.label}
               </button>
@@ -65,7 +61,7 @@ export default function Navigation() {
           </div>
 
           <button
-            className={`md:hidden ${isScrolled ? 'text-slate-900' : 'text-white'}`}
+            className="md:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -79,13 +75,13 @@ export default function Navigation() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-slate-200 shadow-xl">
+        <div className="md:hidden bg-slate-900/95 backdrop-blur-md border-t border-slate-800 shadow-xl">
           <div className="container mx-auto px-6 py-4">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left py-3 text-slate-700 hover:text-emerald-500 font-medium transition-colors border-b border-slate-100 last:border-0"
+                className="block w-full text-left py-3 text-slate-300 hover:text-indigo-400 font-medium transition-colors border-b border-slate-800 last:border-0"
               >
                 {item.label}
               </button>

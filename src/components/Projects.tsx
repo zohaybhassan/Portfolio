@@ -103,18 +103,18 @@ export default function Projects() {
 
   return (
     <section id="projects" className="relative py-20 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-purple-500/5 rounded-full blur-3xl animate-pulse delay-500"></div>
+      {/* Ambient orbs */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-indigo-500/5 rounded-full blur-3xl animate-pulse delay-500"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in-down">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-            Featured Projects
+            Featured <span className="text-indigo-400">Projects</span>
           </h2>
-          <div className="w-20 h-1.5 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mb-4 rounded-full shadow-lg shadow-emerald-500/50"></div>
-          <p className="text-slate-300 text-lg max-w-2xl mx-auto">
+          <div className="w-20 h-1.5 bg-gradient-to-r from-indigo-500 to-violet-500 mx-auto mb-4 rounded-full shadow-lg shadow-indigo-500/40"></div>
+          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             Collection of academic and personal projects showcasing various technologies
           </p>
         </div>
@@ -227,10 +227,10 @@ export default function Projects() {
               }}
             >
               {/* Glowing border effect */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-2xl blur opacity-0 group-hover:opacity-40 transition duration-500"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
 
               {/* Card */}
-              <div className="relative bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border border-slate-700/50 group-hover:border-emerald-500/50 flex flex-col h-full">
+              <div className="relative bg-slate-800/60 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border border-slate-700/50 group-hover:border-indigo-500/40 flex flex-col h-full">
                 {/* Image section */}
                 <div className="relative overflow-hidden h-48">
                   {project.image ? (
@@ -250,7 +250,7 @@ export default function Projects() {
                             href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-3 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl hover:from-emerald-500 hover:to-cyan-500 transition-all duration-300 transform hover:scale-110 shadow-lg"
+                            className="p-3 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl hover:from-indigo-500 hover:to-violet-500 transition-all duration-300 transform hover:scale-110 shadow-lg"
                             aria-label="View GitHub repository"
                           >
                             <Github className="w-6 h-6 text-white" />
@@ -259,7 +259,7 @@ export default function Projects() {
                       </div>
                     </>
                   ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500 flex items-center justify-center p-6 relative overflow-hidden">
+                    <div className="w-full h-full bg-gradient-to-br from-indigo-600 via-violet-600 to-indigo-700 flex items-center justify-center p-6 relative overflow-hidden">
                       {/* Animated gradient overlay */}
                       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent animate-shimmer"></div>
                       <h3 className="text-2xl md:text-3xl font-extrabold text-white text-center leading-tight drop-shadow-2xl relative z-10">
@@ -272,7 +272,7 @@ export default function Projects() {
                             href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-3 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl hover:from-emerald-500 hover:to-cyan-500 transition-all duration-300 transform hover:scale-110 shadow-lg"
+                            className="p-3 bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl hover:from-indigo-500 hover:to-violet-500 transition-all duration-300 transform hover:scale-110 shadow-lg"
                             aria-label="View GitHub repository"
                           >
                             <Github className="w-6 h-6 text-white" />
@@ -285,7 +285,7 @@ export default function Projects() {
 
                 {/* Content section */}
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-300 transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors duration-300">
                     {project.title}
                   </h3>
                   <p className="text-slate-300 mb-4 text-sm leading-relaxed flex-grow group-hover:text-slate-200 transition-colors">
@@ -297,7 +297,7 @@ export default function Projects() {
                     {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="px-3 py-1 bg-slate-700/50 text-slate-300 text-xs rounded-full font-medium border border-slate-600/50 hover:bg-emerald-500/20 hover:text-emerald-300 hover:border-emerald-500/50 transition-all duration-300 cursor-default"
+                        className="px-3 py-1 bg-slate-800/60 text-slate-400 text-xs rounded-full font-medium border border-slate-700/50 hover:bg-indigo-500/15 hover:text-indigo-300 hover:border-indigo-500/40 transition-all duration-300 cursor-default"
                         style={{
                           animation: `fadeIn 0.5s ease-out ${0.8 + index * 0.1 + tagIndex * 0.05}s both`
                         }}
@@ -313,7 +313,7 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-xs text-slate-400 hover:text-emerald-400 transition-colors duration-300 mt-auto"
+                      className="inline-flex items-center gap-2 text-xs text-slate-500 hover:text-indigo-400 transition-colors duration-300 mt-auto"
                       aria-label="View on GitHub"
                     >
                       <Github className="w-4 h-4" />
@@ -323,7 +323,7 @@ export default function Projects() {
                 </div>
 
                 {/* Bottom accent line */}
-                <div className="h-1 w-0 group-hover:w-full bg-gradient-to-r from-emerald-400 to-cyan-400 transition-all duration-500"></div>
+                <div className="h-1 w-0 group-hover:w-full bg-gradient-to-r from-indigo-500 to-violet-500 transition-all duration-500"></div>
               </div>
             </div>
           ))}

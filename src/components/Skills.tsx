@@ -41,35 +41,35 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-950 overflow-hidden"
+      className="relative py-20 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 overflow-hidden"
     >
-      {/* Animated background orbs */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-700"></div>
+      {/* Ambient orbs */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl animate-pulse delay-700"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-            Skills & Expertise
+            Skills &amp; <span className="text-indigo-400">Expertise</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto shadow-lg shadow-emerald-500/50"></div>
-          <p className="text-slate-300 mt-4 text-lg">Mastering the tools that bring ideas to life</p>
+          <div className="w-20 h-1 bg-gradient-to-r from-indigo-500 to-violet-500 mx-auto rounded-full shadow-lg shadow-indigo-500/40"></div>
+          <p className="text-slate-400 mt-4 text-lg">Mastering the tools that bring ideas to life</p>
         </div>
 
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
-              className="group relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-2"
+              className="group relative bg-slate-800/60 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-indigo-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/10 hover:-translate-y-2"
               style={{
                 animation: `fadeInUp 0.6s ease-out ${categoryIndex * 0.15}s both`
               }}
             >
-              {/* Glowing effect on hover */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-emerald-500/0 to-cyan-500/0 group-hover:from-emerald-500/5 group-hover:to-cyan-500/5 transition-all duration-500"></div>
+              {/* Hover glow */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-indigo-500/0 to-violet-500/0 group-hover:from-indigo-500/5 group-hover:to-violet-500/5 transition-all duration-500"></div>
 
               <div className="relative z-10">
-                <h3 className="text-2xl font-bold text-white mb-6 pb-3 border-b-2 border-emerald-500/50 group-hover:border-emerald-400 transition-colors duration-300">
+                <h3 className="text-xl font-bold text-white mb-6 pb-3 border-b border-slate-700 group-hover:border-indigo-500/50 transition-colors duration-300">
                   {category.category}
                 </h3>
                 <div className="space-y-6">
@@ -79,24 +79,18 @@ export default function Skills() {
                       className="transform transition-all duration-300 hover:translate-x-1"
                     >
                       <div className="flex justify-between mb-2">
-                        <span className="font-medium text-slate-200">{skill.name}</span>
-                        <span className="text-emerald-400 font-semibold tabular-nums">{skill.level}%</span>
+                        <span className="font-medium text-slate-200 text-sm">{skill.name}</span>
+                        <span className="text-indigo-400 font-semibold tabular-nums text-sm">{skill.level}%</span>
                       </div>
-                      <div className="relative w-full bg-slate-700/50 rounded-full h-2.5 overflow-hidden">
-                        {/* Animated glow background */}
+                      <div className="relative w-full bg-slate-700/60 rounded-full h-2 overflow-hidden">
                         <div
-                          className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 animate-pulse"
-                        ></div>
-                        {/* Progress bar with gradient and glow */}
-                        <div
-                          className="relative bg-gradient-to-r from-emerald-400 via-emerald-500 to-cyan-400 h-2.5 rounded-full shadow-lg shadow-emerald-500/50 transition-all duration-1000 ease-out"
+                          className="relative bg-gradient-to-r from-indigo-500 to-violet-500 h-2 rounded-full shadow-lg shadow-indigo-500/30 transition-all duration-1000 ease-out"
                           style={{
                             width: `${skill.level}%`,
                             animation: `slideIn 1.2s ease-out ${categoryIndex * 0.15 + skillIndex * 0.1}s both`
                           }}
                         >
-                          {/* Shimmer effect */}
-                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer"></div>
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
                         </div>
                       </div>
                     </div>
