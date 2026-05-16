@@ -24,12 +24,31 @@ export default function Hero() {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center space-y-6 animate-fade-in">
-          <div className="inline-block">
-            <h2 className="text-xl md:text-2xl font-light text-emerald-400 mb-4">
-              Hello, I'm
+          <div className="inline-block relative">
+            {/* Decorative lines */}
+            <span className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-8 w-6 h-px bg-cyan-400 opacity-70"></span>
+            <h2
+              className="text-lg md:text-xl font-mono tracking-[0.3em] uppercase mb-4 animate-neon-flicker"
+              style={{
+                color: '#67e8f9',
+                textShadow: '0 0 7px #67e8f9, 0 0 18px #06b6d4, 0 0 40px #0891b2',
+              }}
+            >
+              &lt; Hello, I'm /&gt;
             </h2>
+            <span className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-8 w-6 h-px bg-cyan-400 opacity-70"></span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-400">
+          <h1
+            className="text-5xl md:text-7xl font-black mb-4 tracking-tight animate-neon-shimmer"
+            style={{
+              background: 'linear-gradient(90deg, #a78bfa, #67e8f9, #f0abfc, #67e8f9, #a78bfa)',
+              backgroundSize: '300% 100%',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              filter: 'drop-shadow(0 0 10px rgba(167,139,250,0.7)) drop-shadow(0 0 28px rgba(103,232,249,0.4))',
+            }}
+          >
             Zohaib Hassan
           </h1>
           <p className="text-xl md:text-3xl text-slate-300 font-light">

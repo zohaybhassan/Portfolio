@@ -214,4 +214,30 @@
     background-size: 200% 200%;
     animation: gradientX 3s ease infinite;
   }
+
+  /* Neon Hero Animations */
+  @keyframes neonFlicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      opacity: 1;
+      text-shadow: 0 0 7px #67e8f9, 0 0 18px #06b6d4, 0 0 40px #0891b2;
+    }
+    20%, 24%, 55% {
+      opacity: 0.6;
+      text-shadow: none;
+    }
+  }
+
+  @keyframes neonShimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animate-neon-flicker {
+    animation: neonFlicker 4s infinite;
+  }
+
+  .animate-neon-shimmer {
+    animation: neonShimmer 4s ease infinite;
+  }
 }
