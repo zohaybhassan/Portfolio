@@ -38,7 +38,15 @@ export default function Navigation() {
       }`}
     >
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-end h-20">
+        <div className="flex items-center justify-between h-20">
+          <button
+            onClick={() => scrollToSection('hero')}
+            className="text-2xl font-bold text-white transition-colors"
+          >
+            <span className="text-indigo-400">{'<'}</span>
+            Zohaib Hassan
+            <span className="text-indigo-400">{'/>'}</span>
+          </button>
 
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
