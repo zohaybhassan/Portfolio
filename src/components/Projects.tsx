@@ -8,9 +8,9 @@ import stresslogo from '/assets/stresslogo.jpg';
 export default function Projects() {
   const projects = [
     {
-      title: 'StressGuard: Wearable ML Health Application',
+      title: 'StressGuard: Intelligent Stress Detection Ecosystem',
       description:
-        'Final Year Project (FYP) — Built a native Android ecosystem that captures continuous BLE smartwatch telemetry to predict physiological stress spikes before they escalate. Implemented a high-stability Voting Ensemble (XGBoost, CatBoost, Random Forest) trained on SMOTE-balanced data, achieving 89.41% classification accuracy. Created a context-aware rule engine that dynamically alters safety thresholds and triggers real-time alerts based on a user\'s aggregated medical history.',
+        'Built a native Android ecosystem that captures continuous BLE smartwatch telemetry to predict physiological stress spikes before they escalate. Implemented a high-stability Voting Ensemble (XGBoost, CatBoost, Random Forest) trained on SMOTE-balanced data, achieving 89.41% classification accuracy. Created a context-aware rule engine that dynamically alters safety thresholds and triggers real-time alerts based on a user\'s aggregated medical history.',
       tags: ['Python', 'XGBoost', 'CatBoost', 'Random Forest', 'Android', 'BLE', 'SMOTE'],
       image: stresslogo,
       github: 'https://github.com/zohaybhassan/StressGuard-ML-Based-Stress-Detection',
