@@ -148,7 +148,7 @@ Set up your own API endpoint and update the form submission handler.
 
 ### TypeScript Errors
 - Run type check: `npm run typecheck`
-- Most lint  errors shown in IDE won't affect the build - Vite handles them gracefully
+- Most lint errors shown in IDE won't affect the build - Vite handles them gracefully
 
 ## 📱 SEO & Meta Tags
 
