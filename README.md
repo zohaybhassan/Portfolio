@@ -49,7 +49,7 @@ netlify deploy --prod --dir=dist
 ## 💻 Local Development
 
 ### Prerequisites
-- Node.js 16+ and npm
+- Node.js 18+ and npm
 
 ### Setup
 ```bash
@@ -137,7 +137,7 @@ Set up your own API endpoint and update the form submission handler.
 ## 🐛 Troubleshooting
 
 ### Build Fails
-- Ensure Node.js version is 16 or higher: `node --version`
+- Ensure Node.js version is 18 or higher: `node --version`
 - Delete `node_modules` and reinstall: `rm -rf node_modules && npm install`
 - Clear Vite cache: `rm -rf dist .vite`
 
