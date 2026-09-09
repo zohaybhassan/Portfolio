@@ -60,7 +60,7 @@ npm install
 npm run dev
 ```
 
-Visit `http://localhost:5173` to view your portfolio
+Visit `http://localhost:5173` to view your portfolio.
 
 ### Build for Production
 ```bash
