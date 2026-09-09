@@ -44,7 +44,7 @@ netlify deploy --prod --dir=dist
    - Netlify will auto-detect the settings from `netlify.toml`
    - Click "Deploy site"
 
-3. **Auto-deployments**: Now every push to `main` branch will automatically deploy!
+3. **Auto-deployments**: Now every push to the `main` branch will automatically deploy!
 
 ## 💻 Local Development
 
