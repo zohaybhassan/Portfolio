@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { Github } from 'lucide-react';
 import primeFitnessImg from '/assets/primefitness.png';
 import onlineLibImg from '/assets/onlinelib.jpg';
 import pacmanImg from '/assets/pacman.png';

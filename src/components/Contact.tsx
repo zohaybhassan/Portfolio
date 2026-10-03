@@ -51,7 +51,7 @@ export default function Contact() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative animate-scale-in"
+                className="group relative min-w-0 animate-scale-in"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className={`absolute -inset-0.5 bg-gradient-to-r ${link.gradient} rounded-2xl blur opacity-0 group-hover:opacity-40 transition duration-500`}></div>
@@ -59,18 +59,18 @@ export default function Contact() {
                 <div className="relative flex items-center gap-4 bg-slate-800/60 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 group-hover:border-indigo-500/40 transition-all duration-500 overflow-hidden">
                   <div className={`absolute inset-0 bg-gradient-to-br ${link.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
 
-                  <div className={`relative bg-gradient-to-br ${link.gradient} p-4 rounded-xl shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
+                  <div className={`relative shrink-0 bg-gradient-to-br ${link.gradient} p-4 rounded-xl shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
                     <link.icon className="w-6 h-6 text-white" />
                   </div>
 
-                  <div className="flex-1 relative z-10">
+                  <div className="min-w-0 flex-1 relative z-10">
                     <p className="text-slate-500 text-sm mb-1">{link.label}</p>
-                    <p className="text-white font-medium group-hover:text-indigo-300 transition-colors">
+                    <p className="break-words text-white font-medium group-hover:text-indigo-300 transition-colors">
                       {link.value}
                     </p>
                   </div>
 
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <Send className="w-5 h-5 text-slate-400" />
                   </div>
                 </div>
