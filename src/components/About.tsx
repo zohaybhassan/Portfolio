@@ -6,124 +6,63 @@ export default function About() {
       icon: ShieldCheck,
       title: 'Quality Assurance',
       description: 'QA and BA testing to review application behavior and identify issues',
-      gradient: 'from-indigo-500 to-violet-500',
     },
     {
       icon: Palette,
       title: 'UI Design',
       description: 'Designing clear interfaces that support usability and business requirements',
-      gradient: 'from-violet-500 to-purple-500',
     },
     {
       icon: Database,
       title: 'SQL Queries',
       description: 'Writing and managing SQL queries to retrieve, review, and validate data',
-      gradient: 'from-indigo-500 to-sky-500',
     },
   ];
 
   return (
-    <section id="about" className="relative py-20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
-      {/* Ambient orbs — indigo/violet only */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-violet-600/10 rounded-full blur-3xl animate-float-delayed"></div>
-
-      <div className="container mx-auto px-6 relative z-10">
-        {/* Section header */}
-        <div className="text-center mb-16 animate-fade-in-down">
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            About <span className="text-indigo-400">Me</span>
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-indigo-500 to-violet-500 mx-auto rounded-full shadow-lg shadow-indigo-500/40"></div>
-          <p className="text-slate-400 mt-4 text-lg">Connecting business needs with technology</p>
+    <section id="about" className="section-shell section-base">
+      <div className="page-container">
+        <div className="mb-9">
+          <h2 className="section-heading">About Me</h2>
+          <p className="section-description">Connecting business needs with technology</p>
         </div>
-
-        <div className="max-w-5xl mx-auto">
-          {/* Bio card */}
-          <div
-            className="relative group mb-16 animate-scale-in"
-            style={{ animationDelay: '0.2s' }}
-          >
-            {/* Glowing border */}
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000 animate-pulse"></div>
-
-            <div className="relative bg-slate-800/60 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-slate-700/50 shadow-2xl overflow-hidden">
-              {/* Corner glows */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-indigo-500/10 to-transparent blur-3xl"></div>
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-violet-500/10 to-transparent blur-3xl"></div>
-
-              <div className="relative z-10">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-1 h-16 bg-gradient-to-b from-indigo-400 to-violet-400 rounded-full"></div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-white mb-1">My Journey</h3>
-                    <p className="text-indigo-300 text-sm">From Computer Science to Business Analysis</p>
-                  </div>
-                </div>
-
-                <p className="text-lg text-slate-200 leading-relaxed mb-6">
-                  I am a <span className="font-semibold text-indigo-300">Business Analyst</span> and a
-                  <span className="font-semibold text-violet-300"> Computer Science graduate from FAST NUCES</span>.
-                  I bring a technical perspective to <span className="font-semibold text-sky-300">understanding business requirements</span>,
-                  reviewing functionality, and shaping practical solutions.
-                </p>
-                <p className="text-lg text-slate-200 leading-relaxed">
-                  My work spans <span className="font-semibold text-indigo-300">QA and BA testing</span>,
-                  <span className="font-semibold text-violet-300"> UI design</span>, and
-                  <span className="font-semibold text-violet-300"> SQL query management</span>.
-                  I focus on <span className="font-semibold text-sky-300">quality assurance, clear user experiences, and reliable data</span>
-                  to support business requirements.
-                </p>
-
-                <div className="mt-8 flex items-center gap-4 text-sm text-slate-400">
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></div>
-                    <span>Business Analyst</span>
-                  </div>
-                  <div className="h-4 w-px bg-slate-700"></div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-violet-400 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                    <span>Always learning</span>
-                  </div>
-                </div>
-              </div>
+        <div className="surface-card max-w-5xl mx-auto">
+          <h3 className="text-xl font-semibold text-slate-100 mb-6">My Journey</h3>
+          <div className="max-w-4xl mx-auto space-y-5">
+            <p className="text-base md:text-lg leading-relaxed text-slate-300">
+              I am a <span className="font-medium text-slate-100">Computer Science graduate from FAST NUCES, Islamabad</span>,
+              and I am currently working as a <span className="font-medium text-slate-100">Business Analyst with Solar Informatics</span>,
+              a U.S.-based company.
+              I bring a technical perspective to <span className="font-medium text-slate-100">understanding business requirements</span>,
+              reviewing functionality, and shaping practical solutions. Through full-stack, AI, and DevOps projects,
+              I have developed an understanding of how digital products are designed, built, and deployed.
+            </p>
+            <p className="text-base md:text-lg leading-relaxed text-slate-300">
+              That experience led me toward business analysis, where I can help
+              <span className="font-medium text-slate-100"> address user pain points and make products more accessible and intuitive</span>.
+              I connect stakeholders and developers, translating business needs into clear requirements that guide design,
+              implementation, and deployment. <span className="font-medium text-slate-100">Strong communication is one of my key strengths</span>:
+              I explain technical ideas clearly, clarify expectations, and build shared understanding across teams.
+            </p>
+            <p className="text-base md:text-lg leading-relaxed text-slate-300">
+              My work spans <span className="font-medium text-slate-100">QA and BA testing</span>,
+              <span className="font-medium text-slate-100"> UI design</span>, and
+              <span className="font-medium text-slate-100"> SQL query management</span>.
+              With strong knowledge of <span className="font-medium text-slate-100">MySQL and MongoDB</span>,
+              I use data to investigate issues and validate application behavior.
+              I focus on <span className="font-medium text-slate-100">quality assurance, clear user experiences, and reliable data</span>{' '}
+              to support business requirements.
+            </p>
+          </div>
+        </div>
+        <div className="mt-6 max-w-5xl mx-auto grid md:grid-cols-3 gap-5">
+          {highlights.map((highlight) => (
+            <div key={highlight.title} className="surface-card">
+              <highlight.icon className="w-6 h-6 text-indigo-300 mb-4" aria-hidden="true" />
+              <h3 className="text-lg font-semibold text-slate-100 mb-2">{highlight.title}</h3>
+              <p className="text-sm leading-relaxed text-slate-400">{highlight.description}</p>
             </div>
-          </div>
-
-          {/* Highlight cards */}
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
-            {highlights.map((highlight, index) => (
-              <div
-                key={index}
-                className="group relative animate-fade-in-up"
-                style={{ animationDelay: `${0.4 + index * 0.15}s` }}
-              >
-                <div className={`absolute -inset-0.5 bg-gradient-to-r ${highlight.gradient} rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500`}></div>
-
-                <div className="relative bg-slate-800/60 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 group-hover:border-indigo-500/40 transition-all duration-500 shadow-xl group-hover:shadow-2xl overflow-hidden h-full flex flex-col">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${highlight.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
-
-                  <div className="relative z-10 flex flex-col h-full">
-                    <div className={`bg-gradient-to-br ${highlight.gradient} w-14 h-14 rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
-                      <highlight.icon className="w-7 h-7 text-white drop-shadow-lg" />
-                    </div>
-
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors duration-300">
-                      {highlight.title}
-                    </h3>
-                    <p className="text-slate-400 leading-relaxed group-hover:text-slate-300 transition-colors duration-300 flex-grow">
-                      {highlight.description}
-                    </p>
-
-                    <div className="mt-4 flex items-center gap-2 text-sm text-slate-500 group-hover:text-slate-300 transition-colors">
-                      <div className={`w-0 group-hover:w-8 h-0.5 bg-gradient-to-r ${highlight.gradient} transition-all duration-500 rounded-full`}></div>
-                      <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">Explore</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          ))}
         </div>
       </div>
     </section>

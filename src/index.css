@@ -3,241 +3,133 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    color-scheme: dark;
+    --page-background: #0b1120;
+    --section-background: #0f172a;
+    --card-background: #1b2a43;
+    --card-border: #435778;
+    --section-border: #27364e;
+  }
+
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
-    /* Account for fixed navbar */
+    scroll-padding-top: 88px;
   }
 
   body {
-    @apply antialiased;
+    background: var(--page-background);
+    @apply text-slate-200 antialiased;
+  }
+
+  ::selection {
+    @apply bg-indigo-500/30 text-white;
+  }
+
+  :where(a, button, input, textarea):focus-visible {
+    outline: 2px solid #a5b4fc;
+    outline-offset: 4px;
   }
 }
 
-@layer utilities {
-  .animate-fade-in {
-    animation: fadeIn 1s ease-in forwards;
+@layer components {
+  .page-container {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
   }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .hero-section {
+    background:
+      radial-gradient(ellipse at 50% 35%, rgba(79, 70, 229, 0.14), transparent 65%),
+      linear-gradient(180deg, #020617, #0b1120);
+    border-bottom: 1px solid var(--section-border);
   }
 
-  /* Skills Section Animations */
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .hero-name {
+    text-shadow: 0 4px 28px rgba(129, 140, 248, 0.16);
   }
 
-  @keyframes slideIn {
-    from {
-      width: 0;
-    }
+  .section-shell {
+    @apply py-16 md:py-20;
+    border-bottom: 1px solid var(--section-border);
   }
 
-  @keyframes shimmer {
-    0% {
-      transform: translateX(-100%);
-    }
-
-    100% {
-      transform: translateX(200%);
-    }
+  .section-base {
+    background: var(--page-background);
   }
 
-  .animate-shimmer {
-    animation: shimmer 3s infinite;
+  .section-muted {
+    background: var(--section-background);
   }
 
-  /* Experience Section Animations */
-  @keyframes fadeSlideIn {
-    from {
-      opacity: 0;
-      transform: translateX(-30px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  .section-heading {
+    @apply text-center text-3xl md:text-4xl font-semibold tracking-tight text-slate-100;
   }
 
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .section-heading::after {
+    content: '';
+    @apply block w-20 h-0.5 mx-auto mt-4 bg-indigo-300;
   }
 
-  @keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  .section-description {
+    @apply mt-4 text-center text-base leading-relaxed text-slate-400;
   }
 
-  .animate-fade-in-down {
-    animation: fadeInDown 0.8s ease-out;
+  .surface-card {
+    @apply rounded-xl border p-6 md:p-8;
+    border-color: var(--card-border);
+    background: var(--card-background);
+    box-shadow: 0 10px 24px rgba(2, 6, 23, 0.24), inset 0 1px 0 rgba(203, 213, 225, 0.06);
   }
 
-  .animate-fade-in-left {
-    animation: fadeInLeft 0.8s ease-out;
+  .project-card {
+    @apply flex flex-col rounded-xl border overflow-hidden;
+    border-color: var(--card-border);
+    background: var(--card-background);
+    box-shadow: 0 10px 24px rgba(2, 6, 23, 0.24), inset 0 1px 0 rgba(203, 213, 225, 0.06);
   }
 
-  .delay-300 {
-    animation-delay: 300ms;
+  .contact-card {
+    @apply rounded-xl border transition-colors duration-150;
+    border-color: var(--card-border);
+    background: var(--card-background);
   }
 
-  .delay-500 {
-    animation-delay: 500ms;
+  .contact-card:hover {
+    border-color: #818cf8;
   }
 
-  .delay-700 {
-    animation-delay: 700ms;
+  .button-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white hover:bg-indigo-700 transition-colors duration-150;
   }
 
-  .delay-1000 {
-    animation-delay: 1000ms;
+  .button-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-600 bg-slate-800/50 px-5 py-3 text-sm font-medium text-slate-200 hover:border-indigo-400 hover:bg-slate-800 transition-colors duration-150;
   }
 
-  /* About Section Animations */
-  @keyframes float {
-
-    0%,
-    100% {
-      transform: translateY(0) translateX(0);
-    }
-
-    33% {
-      transform: translateY(-20px) translateX(10px);
-    }
-
-    66% {
-      transform: translateY(-10px) translateX(-10px);
-    }
+  .skill-tag {
+    @apply rounded-md border px-3 py-1.5 text-xs font-medium leading-relaxed text-slate-200;
+    border-color: #587094;
+    background: #2a3d5b;
+    box-shadow: inset 0 1px 0 rgba(203, 213, 225, 0.08), 0 2px 4px rgba(2, 6, 23, 0.12);
   }
 
-  @keyframes floatDelayed {
-
-    0%,
-    100% {
-      transform: translateY(0) translateX(0);
-    }
-
-    33% {
-      transform: translateY(-15px) translateX(-15px);
-    }
-
-    66% {
-      transform: translateY(-25px) translateX(10px);
-    }
+  .form-field {
+    @apply w-full rounded-lg border border-slate-600 bg-slate-950/60 px-4 py-3 text-sm text-slate-100 placeholder-slate-400 focus:border-indigo-400 transition-colors duration-150;
   }
 
-  @keyframes scaleIn {
-    from {
-      opacity: 0;
-      transform: scale(0.9);
-    }
+  .hero-section .button-secondary {
+    @apply bg-transparent hover:bg-slate-900;
+  }
+}
 
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes gradientX {
-
-    0%,
-    100% {
-      background-position: 0% 50%;
-    }
-
-    50% {
-      background-position: 100% 50%;
-    }
-  }
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  .animate-float-delayed {
-    animation: floatDelayed 8s ease-in-out infinite;
-  }
-
-  .animate-scale-in {
-    animation: scaleIn 0.8s ease-out both;
-  }
-
-  .animate-fade-in-up {
-    animation: fadeInUp 0.6s ease-out both;
-  }
-
-  .animate-gradient-x {
-    background-size: 200% 200%;
-    animation: gradientX 3s ease infinite;
-  }
-
-  /* Neon Hero Animations */
-  @keyframes neonFlicker {
-    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-      opacity: 1;
-      text-shadow: 0 0 7px #67e8f9, 0 0 18px #06b6d4, 0 0 40px #0891b2;
-    }
-    20%, 24%, 55% {
-      opacity: 0.6;
-      text-shadow: none;
-    }
-  }
-
-  @keyframes neonShimmer {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  .animate-neon-flicker {
-    animation: neonFlicker 4s infinite;
-  }
-
-  .animate-neon-shimmer {
-    animation: neonShimmer 4s ease infinite;
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
   }
 }
