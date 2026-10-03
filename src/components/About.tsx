@@ -1,23 +1,23 @@
-import { Code2, Palette, Rocket } from 'lucide-react';
+import { ShieldCheck, Palette, Database } from 'lucide-react';
 
 export default function About() {
   const highlights = [
     {
-      icon: Code2,
-      title: 'Clean Code',
-      description: 'Writing maintainable, scalable, and efficient code',
+      icon: ShieldCheck,
+      title: 'Quality Assurance',
+      description: 'QA and BA testing to review application behavior and identify issues',
       gradient: 'from-indigo-500 to-violet-500',
     },
     {
       icon: Palette,
-      title: 'Creative Design',
-      description: 'Designing intuitive and beautiful user interfaces',
+      title: 'UI Design',
+      description: 'Designing clear interfaces that support usability and business requirements',
       gradient: 'from-violet-500 to-purple-500',
     },
     {
-      icon: Rocket,
-      title: 'Fast Delivery',
-      description: 'Delivering projects on time without compromising quality',
+      icon: Database,
+      title: 'SQL Queries',
+      description: 'Writing and managing SQL queries to retrieve, review, and validate data',
       gradient: 'from-indigo-500 to-sky-500',
     },
   ];
@@ -35,7 +35,7 @@ export default function About() {
             About <span className="text-indigo-400">Me</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-indigo-500 to-violet-500 mx-auto rounded-full shadow-lg shadow-indigo-500/40"></div>
-          <p className="text-slate-400 mt-4 text-lg">Passionate developer crafting digital experiences</p>
+          <p className="text-slate-400 mt-4 text-lg">Connecting business needs with technology</p>
         </div>
 
         <div className="max-w-5xl mx-auto">
@@ -57,28 +57,28 @@ export default function About() {
                   <div className="w-1 h-16 bg-gradient-to-b from-indigo-400 to-violet-400 rounded-full"></div>
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-1">My Journey</h3>
-                    <p className="text-indigo-300 text-sm">Crafting Code, Creating Solutions</p>
+                    <p className="text-indigo-300 text-sm">From Computer Science to Business Analysis</p>
                   </div>
                 </div>
 
                 <p className="text-lg text-slate-200 leading-relaxed mb-6">
-                  I am a <span className="font-semibold text-indigo-300">software developer and CS senior at FAST NUCES</span>, specializing at the intersection of
-                  <span className="font-semibold text-violet-300"> scalable system architecture</span> and <span className="font-semibold text-violet-300">applied artificial intelligence</span>.
-                  While I have a strong foundation in full-stack development, my core expertise lies in engineering
-                  <span className="font-semibold text-sky-300"> predictive machine learning pipelines</span>, integrating real-time data telemetry,
-                  and developing autonomous, multi-agent workflows.
+                  I am a <span className="font-semibold text-indigo-300">Business Analyst</span> and a
+                  <span className="font-semibold text-violet-300"> Computer Science graduate from FAST NUCES</span>.
+                  I bring a technical perspective to <span className="font-semibold text-sky-300">understanding business requirements</span>,
+                  reviewing functionality, and shaping practical solutions.
                 </p>
                 <p className="text-lg text-slate-200 leading-relaxed">
-                  Proficient in a versatile stack, including <span className="font-semibold text-indigo-300">Python, Java, C++, and Salesforce.</span> I build everything from
-                  custom Android health ecosystems to intelligent agentic automation tools. I am adept at applying
-                  <span className="font-semibold text-violet-300"> clean design patterns</span> to build resilient, high-performance software that leverages
-                  <span className="font-semibold text-sky-300"> AI to solve complex challenges</span>.
+                  My work spans <span className="font-semibold text-indigo-300">QA and BA testing</span>,
+                  <span className="font-semibold text-violet-300"> UI design</span>, and
+                  <span className="font-semibold text-violet-300"> SQL query management</span>.
+                  I focus on <span className="font-semibold text-sky-300">quality assurance, clear user experiences, and reliable data</span>
+                  to support business requirements.
                 </p>
 
                 <div className="mt-8 flex items-center gap-4 text-sm text-slate-400">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></div>
-                    <span>Available for opportunities</span>
+                    <span>Business Analyst</span>
                   </div>
                   <div className="h-4 w-px bg-slate-700"></div>
                   <div className="flex items-center gap-2">

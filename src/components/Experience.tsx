@@ -3,9 +3,25 @@ import { Briefcase, GraduationCap } from 'lucide-react';
 export default function Experience() {
   const experiences = [
     {
-      title: 'Software Internship',
+      title: 'Junior Business Analyst',
+      company: 'Solar Informatics',
+      period: 'Oct 2026 – Present',
+      description:
+        'Working on business analysis, QA and BA testing, UI design, and SQL query management, with a focus on quality assurance and usability.',
+      type: 'work',
+    },
+    {
+      title: 'Software Product Business Analyst (Internship)',
+      company: 'Solar Informatics',
+      period: 'Aug 2026 – Sep 2026',
+      description:
+        'Completed a business analysis internship focused on requirements analysis and product management.',
+      type: 'work',
+    },
+    {
+      title: 'Full Stack Engineer (Internship)',
       company: 'Teresol Pvt. Ltd. Islamabad (On-site)',
-      period: 'June 2024 – Aug 2024',
+      period: 'June 2025 – Aug 2025',
       description:
         'Architected a Vue.js Finite State Machine (FSM) to manage complex user sessions and ensure data consistency. Built scalable, reusable UI components using Component-Based Architecture, mirroring Salesforce LWC patterns. Implemented Vuex state management, reducing redundant API calls and boosting performance by 30%.',
       type: 'work',
@@ -22,11 +38,11 @@ export default function Experience() {
 
   const education = [
     {
-      title: 'Bachelors of Science in Computer Sciences',
+      title: 'Bachelor of Science in Computer Science',
       company: 'National University of Computer and Emerging Sciences, Islamabad',
-      period: 'Aug 2022 – Present',
+      period: 'Aug 2022 – June 2026',
       description:
-        'Pursuing BS in Computer Science at FAST NUCES. Engaging in coursework covering software engineering, algorithms, web technologies, and various programming paradigms.',
+        'Graduated with a Bachelor of Science in Computer Science from FAST NUCES, Islamabad. Studied software engineering, algorithms, databases, and web technologies, building a technical foundation for business analysis.',
       type: 'education',
     },
   ];

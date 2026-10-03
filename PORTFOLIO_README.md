@@ -1,7 +1,7 @@
 # Portfolio Website - Technical Documentation
 
 ## Overview
-This is my personal portfolio website, built to showcase my skills, projects, and experience as a software developer. I designed it with a focus on **modern UI/UX principles**, **performance optimization**, and **creative animations** to create a memorable user experience.
+This is my personal portfolio website, built to showcase my skills, projects, and experience as a Business Analyst, with a Computer Science background and a focus on quality assurance, QA and BA testing, UI design, and SQL queries. I designed it with a focus on **modern UI/UX principles**, **performance optimization**, and **creative animations** to create a memorable user experience.
 
 ---
 

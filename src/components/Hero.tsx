@@ -70,13 +70,13 @@ export default function Hero() {
             className="text-xl md:text-2xl text-slate-100 font-light"
             style={{ textShadow: '0 1px 8px rgba(0,0,0,0.9)' }}
           >
-            Software Developer &amp; Full Stack Trainee
+            Business Analyst
           </p>
           <p
             className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mt-2"
             style={{ textShadow: '0 1px 6px rgba(0,0,0,0.8)' }}
           >
-            Computer Science student passionate about crafting elegant web applications and innovative solutions
+            Computer Science graduate focused on business analysis, quality assurance, UI design, and SQL
           </p>
 
           {/* CTA Buttons */}
